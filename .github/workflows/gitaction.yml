@@ -21,8 +21,11 @@ jobs:
     - name: Add Remote for Repository 2
       run: git remote add repo2 https://github.com/kratoz6/Testing.git
 
+    - name: Fetch branches from Repository 2
+      run: git fetch repo2
+
     - name: Pull changes from Repository 2
-      run: git pull repo2 main
+      run: git pull repo2/main
 
     - name: Push changes to Repository 1
       run: git push origin main
