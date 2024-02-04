@@ -25,7 +25,7 @@ jobs:
       run: git fetch repo2
 
     - name: Pull changes from Repository 2
-      run: git pull repo2/main
+      run: git pull repo2 main
 
     - name: Push changes to Repository 1
       run: git push origin main
