@@ -21,11 +21,14 @@ jobs:
     - name: Add Remote for Repository 2
       run: git remote add repo2 https://github.com/kratoz6/Testing.git
 
+    - name: Configure Git credentials
+      run: echo "machine github.com login kratoz6 password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
+
     - name: Fetch branches from Repository 2
-      run: git fetch repo2
+      run: git ls-remote --heads repo2
 
     - name: Pull changes from Repository 2
       run: git pull repo2 main
 
     - name: Push changes to Repository 1
-      run: git push origin main
+      run: g
