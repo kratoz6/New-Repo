@@ -15,8 +15,8 @@ jobs:
 
     - name: Set up Git
       run: |
-        git config user.name "Your Name"
-        git config user.email "your.email@example.com"
+        git config user.name "kratoz6"
+        git config user.email "krnkratoz@gmail.com"
 
     - name: Add Remote for Repository 2
       run: git remote add repo2 https://github.com/kratoz6/Testing.git
